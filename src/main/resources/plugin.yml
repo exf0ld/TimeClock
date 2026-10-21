@@ -1,0 +1,17 @@
+name: TimeClock
+version: 1.1.0
+main: sk.timeclock.TimeClockPlugin
+api-version: '26.2'
+description: Right-click a special clock to run /tick freeze and /tick unfreeze.
+commands:
+  timeclock:
+    description: Give the Clock of Time or reload the config.
+    usage: /timeclock <give [player]|reload>
+    permission: timeclock.admin
+permissions:
+  timeclock.admin:
+    description: Use /timeclock.
+    default: op
+  timeclock.use:
+    description: Use the Clock of Time.
+    default: true
